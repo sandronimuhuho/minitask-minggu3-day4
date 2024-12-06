@@ -4,10 +4,12 @@
     transition: font-size 1s ease-in 2s;
 }
 #black {
+    position: absolute;
     font-size: 40px;
     color: black;
 }
 p {
+    position: relative;
     font-size: 20;
     color: white;
 }
@@ -22,37 +24,44 @@ p {
  text-transform: capitalize;
 }
 .container {
-    height: 300px;
     position: relative;
-    border-color: black;
-    border: 2px;
+    height: 300px;
+    border-color:white;
+    border: 1px solid black;
 }
-.box {
+.button {
     width: 30%;
     height: 50px;
-    background-color: white;
-    padding: 5px;
-    border-radius: 5px;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 50px;
     border: 2px solid black;
-    margin: 20px 10px 20px 0px;
+    margin: 20px;
     text-align: center;
-    font-weight: bold;
     font-size: 20px;
 }
   
 .login {
     position: relative;
     top: 75px;
+    right: 0px;
     height: 200;
-    margin-top: 50px;
-    
+    margin: 0px;
+   
 
+}
+.login:hover{
+    color: white;
+    background-color: black;
 }
 .register{
     position: absolute;
-    top: 0px;
+    top: 75px;
     right: 0px;
-    left: -10px;
+    height: 200;
     margin: 0;
-    margin-left: 50%;
+}
+.register:hover{
+    color: blue;
+    background-color: green;
 }
